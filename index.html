@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="static/css/sou.css">
     <link id="daily-theme" rel="stylesheet" href="static/css/sou.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" data-original-media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
     <link id="dark-theme" rel="stylesheet" href="static/css/sou_night.css" media="(prefers-color-scheme: dark)" data-original-media="(prefers-color-scheme: dark)">
-    <link href="https://fonts.geekzu.org/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet"> <!--引用Google Fonts Josefin Sans 替换为极客族-->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet"> <!--引用Google Fonts Josefin Sans 替换为极客族-->
     <link rel="manifest" href="static/manifest.json">
     <script type="text/javascript" src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
     <!--引用今日诗句-->
@@ -93,7 +93,7 @@
 
                     <div class="list">
                         <ul>
-                                <!------>
+                                <!---->
                                 <li class="title"><i class="iconfont icon-youxiang"></i>Emails</li>
                                 <li><a rel="nofollow" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i
                                         class="iconfont icon-gmail" style="color: #f03;"></i>Gmail</a></li>
@@ -109,10 +109,8 @@
                                         class="iconfont icon-QQ" style="color: #f05;"></i>QQ邮箱</a></li>
                                 <li><a rel="nofollow" href="https://qiye.aliyun.com/" target="_blank"><i
                                         class="iconfont icon-yunyouxiang" style="color: #f15534;"></i>阿里邮箱</a></li>
-                                <!------>
+                                <!---->
                                 <li class="title"><i class="iconfont icon-msg"></i>SNS</li>
-                                <li><a href="https://mast.dragon-fly.club" target="_blank"><i
-                                    class="iconfont " style="color: #e6162d;"></i>Island 岛屿</a></li>
                                 <li><a rel="nofollow" href="https://www.weibo.com" target="_blank"><i
                                         class="iconfont icon-weibo" style="color: #e6162d;"></i>微博</a></li>
                                 <li><a rel="nofollow" href="https://www.zhihu.com/" target="_blank"><i
@@ -170,9 +168,7 @@
                                 <li><a rel="nofollow" href="https://www.amazon.cn/" target="_blank"><i
                                         class="iconfont icon-amazon" style="color: #fc9b18;"></i>亚马逊</a></li>
                                 <li><a rel="nofollow" href="http://www.dangdang.com/" target="_blank"><i
-                                        class="iconfont icon-dangdang" style="color: #ff2832;"></i>当当</a></li>
-                                <li><a rel="nofollow" href="https://wat.dyartstyle.com/" target="_blank"><i
-                                        class="iconfont icon-wat" style="color: #fe2e52;"></i>吾爱淘</a></li>
+                                        class="iconfont icon-dangdang" style="color: #ff2832;"></i>当当</a>
                                 <!------>
                                 <li class="title"><i class="iconfont icon-sheji"></i>UX</li>
                                 <li><a rel="nofollow" href="https://web.yyv.me/" target="_blank"><i
@@ -245,8 +241,7 @@
                                 <li><a rel="nofollow" href="https://fontawesome.com/icons?d=gallery&m=free"
                                        target="_blank"><i class="iconfont icon-font-awesome" style="color: #4af;"></i>Font
                                     A.</a></li>
-                                <li><a rel="nofollow" href="https://msdn.itellyou.cn/" target="_blank"><i
-                                        class="iconfont icon-windows" style="color: #48c;"></i>MSDN下载</a></li>
+                                
                                 <li><a rel="nofollow" href="https://dash.cloudflare.com/" target="_blank"><i
                                         class="iconfont icon-cloudflare" style="color: #f37f20;"></i>C. flare</a></li>
                                 <li><a rel="nofollow" href="https://www.swiper.com.cn/" target="_blank"><i
@@ -293,8 +288,8 @@
                                     </table>
                                 </div>
                                 <div class="se_add_preinstall">
-                                    <button class="set_se_list_add"><span class="icon iconfont icontianjia"></span>Add new</button>
-                                    <button class="set_se_list_preinstall"><span class="icon iconfont iconjinggao"></span>Reset</button>
+                                    <button class="set_se_list_add"><span class="icon iconfont icontianjia"></span>增加</button>
+                                    <button class="set_se_list_preinstall"><span class="icon iconfont iconjinggao"></span>重置</button>
                                 </div>
                                 <div class="add_content se_add_content" style="display:none;">
                                     <div class="from_items">
@@ -391,8 +386,8 @@
                         <h3>备份</h3>
                         <textarea id="data_txt"></textarea>
                         <br>
-                        <button id="my_data_in">上传</button>
-                        <button id="my_data_out">下载</button>
+                        <button id="my_data_in">还原</button>
+                        <button id="my_data_out">备份</button>
                     </div>
                 </div>
                 <!--我的 end-->
@@ -404,7 +399,9 @@
     </div>
     <!-- 侧栏 end -->
     <!-- 天气 -->
-    <div id="tp-weather-widget"></div>
+    <!-- <iframe width="300" height="30" frameborder="0" scrolling="no" hspace="0" src="https://i.tianqi.com/?c=code&a=getcode&id=34&icon=1"></iframe> -->
+    
+<div id="tp-weather-widget"></div>
 <script>(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))</script>
 <script>tpwidget("init", {
     "flavor": "slim",
@@ -469,7 +466,7 @@ tpwidget("show");</script>
                         <li class="quick" data-s="weibo" target="_blank" title="微博">
                             <a rel="nofollow" href="https://www.weibo.com/">
                                 <i style="background-image: url(static/icon/weibo.ico);"></i>
-                                微博
+                                Weibo
                             </a>
                         </li>
                         <li class="quick" data-s="steam" target="_blank" title="Steam">
