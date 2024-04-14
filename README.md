@@ -6,6 +6,5 @@ Hoyue导航页<br />
 <img src="https://image.hoyue.fun/imgup/2024/04/202404150302685.webp"/>
 <br />
 References: 
-* [https://github.com/HolgerHuo/minimalist-search](https://github.com/HolgerHuo/minimalist-search)
-* [https://github.com/yeetime/sou2](https://github.com/yeetime/sou2)
+https://github.com/HolgerHuo/minimalist-search and https://github.com/yeetime/sou2
 
